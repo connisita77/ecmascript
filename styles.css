@@ -6,9 +6,15 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #f0f4f8;
+  background-color:hsl(115, 28.70%, 74.70%);
   color: #333;
 }
+
+.hero img {
+    width: 100%;
+    display: block;
+}
+
 
 .container {
   max-width: 1000px;
@@ -17,11 +23,12 @@ body {
 }
 
 .hero {
-  background: linear-gradient(135deg, #1e90ff, #00bcd4);
+  background: linear-gradient(135deg,hsl(61, 45.30%, 64.90%), #00bcd4);
   color: white;
   padding: 3rem 1rem;
   text-align: center;
   border-radius: 0 0 20px 20px;
+  width: 100%;
 }
 
 .hero h1 {
@@ -36,7 +43,7 @@ body {
 
 .btn {
   background-color: white;
-  color: #1e90ff;
+  color:rgb(121, 42, 42);
   padding: 0.7rem 1.2rem;
   text-decoration: none;
   border-radius: 5px;
@@ -45,11 +52,12 @@ body {
 }
 
 .btn:hover {
-  background-color: #e0f7fa;
+  background-color:rgb(18, 69, 75);
 }
 
 .navbar {
-  background-color: white;
+  background-color:rgba(10, 22, 187, 0.1);
+  position: sticky;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
@@ -111,7 +119,7 @@ ul {
 }
 
 .card pre {
-  background: #f7f7f7;
+  background:rgb(209, 209, 209);
   padding: 1rem;
   border-radius: 8px;
   font-size: 0.9rem;
@@ -126,4 +134,23 @@ footer {
   background-color: #e0f7fa;
   margin-top: 3rem;
   border-top: 1px solid #ccc;
+}
+
+@media(max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cards {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
 }
