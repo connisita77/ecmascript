@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tutorial ECMAScript</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>🌐 Tutorial ECMAScript</h1>
+      <p>Conoce qué es ECMAScript, sus versiones y aprende con ejemplos reales en un solo lugar.</p>
+      </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="#que-es">¿Qué es ECMAScript?</a></li>
+        <li><a href="#versiones">Versiones</a></li>
+        <li><a href="#uso">¿Cómo se usa?</a></li>
+        <li><a href="#diferencias">Diferencias</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="que-es">
+      <h2>📘 ¿Qué es ECMAScript?</h2>
+      <p>
+        ECMAScript es la base del lenguaje JavaScript. Es una especificación creada por ECMA International que define cómo debe comportarse JavaScript en todos los navegadores, garantizando compatibilidad y consistencia.
+      </p>
+    </section>
+
+    <section id="versiones">
+      <h2>🧾 Versiones de ECMAScript</h2>
+      <p>Desde 1997, ECMAScript ha evolucionado con nuevas funcionalidades. Aquí tienes una guía desde ES5 hasta ES14:</p>
+
+      <div class="cards">
+        <!-- Puedes copiar y pegar más tarjetas aquí para más versiones -->
+        <div class="card">
+          <h3>ES6 / ES2015</h3>
+          <p>Introduce `let`, `const`, funciones flecha, clases y más.</p>
+          <pre><code>const saludar = nombre => {
+  console.log(`Hola, ${nombre}`);
+};
+saludar("Juan");</code></pre>
+        </div>
+
+        <div class="card">
+          <h3>ES7 / ES2016</h3>
+          <p>Añade el método <code>includes</code> y el operador exponencial <code>**</code>.</p>
+          <pre><code>console.log([1, 2, 3].includes(2)); // true
+console.log(2 ** 3); // 8</code></pre>
+        </div>
+
+        <div class="card">
+          <h3>ES11 / ES2020</h3>
+          <p>Encadenamiento opcional <code>?.</code> y <code>??</code> para valores nulos.</p>
+          <pre><code>const user = {};
+console.log(user.info?.name ?? "Invitado");</code></pre>
+        </div>
+
+        <div class="card">
+          <h3>ES14 / ES2023</h3>
+          <p>Método <code>findLast</code> en arrays.</p>
+          <pre><code>const nums = [1, 2, 3, 4];
+console.log(nums.findLast(n => n % 2 === 0)); // 4</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="uso">
+      <h2>🛠 ¿Cómo utilizar ECMAScript?</h2>
+      <p>
+        Puedes usar JavaScript moderno directamente en tu navegador con <code>&lt;script type="module"&gt;</code>. Para compatibilidad avanzada, se usan herramientas como Babel y Webpack que transforman el código moderno a versiones antiguas compatibles.
+      </p>
+    </section>
+
+    <section id="diferencias">
+      <h2>⚖️ Diferencias notables entre versiones</h2>
+      <ul>
+        <li><strong>ES6</strong> marcó un antes y un después con clases, módulos, y más.</li>
+        <li>Las versiones posteriores se enfocan en mejoras pequeñas pero poderosas.</li>
+        <li>Los navegadores modernos ya soportan la mayoría de estas características.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Creado por CONNIE TATIANA CARRILLO BOHORQUEZ - KEVIN SANTIAGO RIVERO RUEDA </p>
+    </div>
+  </footer>
+</body>
+</html>
